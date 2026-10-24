@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth"><head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/buhlerworks-agency/">
+<!-- BASE:END -->
+
+  <!-- ============================================================================ -->
+  <!-- HEAD: SEO, Open Graph, fonts, Tailwind, and custom styles                     -->
+  <!-- Notes: Update the canonical URL, description, and og:image if they change.    -->
+  <!-- ============================================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="description" content="buhlerworks helps small and medium-sized businesses grow with AI: 24/7 Smart Bots, Apple &amp; Google Wallet loyalty programs, and conversion-ready landing pages. Book a free consultation.">
+  
+  <meta name="author" content="buhlerworks">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0B1426">
+  <link rel="canonical" href="https://buhlerworks.com/">
+
+  <!-- Open Graph / social sharing -->
+  
+  <meta property="og:site_name" content="buhlerworks">
+  
+  
+  <meta property="og:url" content="https://buhlerworks.com/">
+  
+  
+  <meta property="og:locale" content="en_US">
+  
+  
+  
+  
+
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "buhlerworks",
+    "url": "https://buhlerworks.com/",
+    "description": "Digital marketing agency helping small and medium-sized businesses adopt AI-powered growth tools.",
+    "email": "hello@buhlerworks.com",
+    "areaServed": "US",
+    "serviceType": ["AI Chatbots", "Wallet Pass Loyalty Programs", "Landing Page Design"]
+  }
+  </script>
+
+  <!-- Fonts: Sora (geometric headings) + Inter (readable body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Sora:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 950: '#070D1A', 900: '#0B1426', 800: '#111D35', 700: '#1A2947', 600: '#2A3B5E' },
+            teal: { 300: '#5EEAD4', 400: '#2DD4BF', 500: '#14B8A6' },
+            amber: { 400: '#FBBF24' }
+          },
+          fontFamily: {
+            display: ['Sora', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  
+
+<!-- SEO Meta Tags -->
+<title>buhlerworks digital marketing agency </title>
+<meta property="og:title" content="buhlerworks digital marketing agency " />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="buhlerworks digital marketing agency " />
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="/buhlerworks-agency/favicon.ico" />
+<link rel="icon" type="image/png" sizes="192x192" href="/buhlerworks-agency/favicon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/buhlerworks-agency/apple-touch-icon.png" />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mvlw0b36-bt0iy";
+  var SITEK="";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
+  var u=new URL(location.href);var found=null;var changed=false;
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=8524');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='HCgr3MiD';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='HCgr3MiD';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-navy-900 text-slate-200 antialiased">
+
+  <!-- Skip link for keyboard and screen-reader users -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] bg-teal-400 text-navy-950 font-semibold px-4 py-2 rounded-lg">Skip to main content</a>
+
+  <!-- ============================================================================ -->
+  <!-- NAVBAR: Sticky top navigation with mobile menu                                -->
+  <!-- Notes: Links jump to sections on this page. Edit labels freely.               -->
+  <!-- ============================================================================ -->
+  <header data-section="navbar" class="sticky top-0 z-50 bg-navy-900/85 backdrop-blur border-b border-white/5">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-16 flex items-center justify-between" aria-label="Primary">
+      <a href="#top" class="font-display font-bold text-xl text-white tracking-tight">buhler<span class="text-teal-400">works</span></a>
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <li><a href="#services" class="hover:text-teal-300 transition-colors">Services</a></li>
+        <li><a href="#how-it-works" class="hover:text-teal-300 transition-colors">How It Works</a></li>
+        <li><a href="#results" class="hover:text-teal-300 transition-colors">Results</a></li>
+        <li><a href="#faq" class="hover:text-teal-300 transition-colors">FAQ</a></li>
+      </ul>
+      <a href="#contact" class="hidden md:inline-flex items-center bg-teal-400 hover:bg-teal-300 text-navy-950 font-semibold text-sm px-5 py-2.5 rounded-lg transition-colors">Book a Free Consultation</a>
+      <button id="menu-toggle" class="md:hidden p-2 text-white" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-white/5 bg-navy-900">
+      <ul class="px-4 py-4 space-y-1 text-base font-medium">
+        <li><a href="#services" class="block py-2 text-slate-200 hover:text-teal-300">Services</a></li>
+        <li><a href="#how-it-works" class="block py-2 text-slate-200 hover:text-teal-300">How It Works</a></li>
+        <li><a href="#results" class="block py-2 text-slate-200 hover:text-teal-300">Results</a></li>
+        <li><a href="#faq" class="block py-2 text-slate-200 hover:text-teal-300">FAQ</a></li>
+        <li class="pt-2"><a href="#contact" class="block text-center bg-teal-400 text-navy-950 font-semibold py-3 rounded-lg">Book a Free Consultation</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================================ -->
+    <!-- HERO: Brand name, value proposition, and primary call to action               -->
+    <!-- Notes: Headline is not animated on purpose (faster page load).                -->
+    <!-- ============================================================================ -->
+    <section id="top" data-section="hero" class="hero-section relative overflow-hidden">
+      <div class="absolute inset-0 hero-glow" aria-hidden="true"></div>
+      <div class="absolute inset-0 grid-lines" aria-hidden="true"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-16 pb-20 md:pt-28 md:pb-32 grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7">
+          <p class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold uppercase tracking-widest text-teal-300 bg-teal-400/10 border border-teal-400/20 rounded-full px-4 py-1.5 mb-6">
+            <span class="w-2 h-2 rounded-full bg-teal-400" aria-hidden="true"></span> AI growth agency for SMBs
+          </p>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6">
+            buhlerworks makes <span class="text-teal-400">enterprise-grade AI</span> work for your small business.
+          </h1>
+          <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mb-10">
+            The same automation big brands use to answer customers, reward loyalty, and win leads, set up for you, priced for you, and explained in plain English.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#contact" class="inline-flex justify-center items-center gap-2 bg-teal-400 hover:bg-teal-300 text-navy-950 font-semibold text-base px-7 py-4 rounded-xl transition-colors shadow-lg shadow-teal-500/20">
+              Book a Free Consultation
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"></path></svg>
+            </a>
+            <a href="#services" class="inline-flex justify-center items-center border border-white/20 hover:border-teal-400 text-white font-semibold px-7 py-4 rounded-xl transition-colors">Explore Services</a>
+          </div>
+          <p class="mt-8 text-sm text-slate-400">No long contracts · Transparent pricing · Live in weeks, not months</p>
+        </div>
+
+        <!-- Hero visual: compact dashboard preview built with HTML -->
+        <div class="lg:col-span-5 reveal" aria-hidden="true">
+          <div class="bg-navy-800/80 border border-white/10 rounded-2xl p-6 shadow-2xl">
+            <div class="flex items-center justify-between mb-6">
+              <span class="font-display font-semibold text-white">This week</span>
+              <span class="text-xs text-teal-300 bg-teal-400/10 px-2.5 py-1 rounded-full">Live</span>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div class="bg-navy-900 rounded-xl p-4">
+                <p class="text-xs text-slate-400">Chats handled</p>
+                <p class="font-display text-2xl font-bold text-white">1,248</p>
+              </div>
+              <div class="bg-navy-900 rounded-xl p-4">
+                <p class="text-xs text-slate-400">Appointments booked</p>
+                <p class="font-display text-2xl font-bold text-white">86</p>
+              </div>
+              <div class="bg-navy-900 rounded-xl p-4">
+                <p class="text-xs text-slate-400">Wallet passes added</p>
+                <p class="font-display text-2xl font-bold text-amber-400">312</p>
+              </div>
+              <div class="bg-navy-900 rounded-xl p-4">
+                <p class="text-xs text-slate-400">Landing page CVR</p>
+                <p class="font-display text-2xl font-bold text-teal-400">14.2%</p>
+              </div>
+            </div>
+            <div class="bg-navy-900 rounded-xl p-4 space-y-3 text-sm">
+              <p class="bg-navy-700 text-slate-200 rounded-lg rounded-bl-none px-3 py-2 w-fit max-w-[85%]">Do you have anything open Saturday?</p>
+              <p class="bg-teal-400 text-navy-950 rounded-lg rounded-br-none px-3 py-2 w-fit max-w-[85%] ml-auto">Yes! 10:30am or 2:00pm. Want me to book one for you?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- SERVICES: Three service cards in a responsive grid                            -->
+    <!-- Notes: 1 column on mobile, 3 on desktop. "Learn more" links jump to the       -->
+    <!--        detailed sections below.                                               -->
+    <!-- ============================================================================ -->
+    <section id="services" data-section="services" class="services-section bg-navy-950 border-y border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20 md:py-28">
+        <div class="max-w-3xl mb-14 reveal">
+          <p class="text-sm font-semibold uppercase tracking-widest text-teal-300 mb-3">What we build</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-5">Three AI tools. One goal: grow your business.</h2>
+          <p class="text-lg text-slate-300">Every service runs on <strong class="text-white">PayMeGPT</strong>, the platform underpinning our work. You don't need to learn it. We set it up, connect it to your business, and keep it tuned so it quietly does its job.</p>
+        </div>
+
+        <div class="services-grid grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card 1: Smart Bots -->
+          <article class="lift reveal bg-navy-800 border border-white/10 rounded-2xl p-7 flex flex-col">
+            <div class="w-12 h-12 rounded-xl bg-teal-400/15 text-teal-400 flex items-center justify-center mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.4-4 8-9 8a9.8 9.8 0 0 1-4-.8L3 20l1.3-3.9A7.6 7.6 0 0 1 3 12c0-4.4 4-8 9-8s9 3.6 9 8Z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Smart Bots</h3>
+            <p class="text-slate-300 mb-6">AI chatbots and assistants that answer customer questions, qualify leads, and book appointments around the clock, on your website, messaging apps, and social channels.</p>
+            <ul class="space-y-3 mb-8 text-sm text-slate-200">
+              <li class="flex gap-3"><svg class="w-5 h-5 text-teal-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path stroke-linecap="round" d="M12 7v5l3 2"></path></svg>Replies 24/7, even after closing</li>
+              <li class="flex gap-3"><svg class="w-5 h-5 text-teal-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 4h18l-7 8v6l-4 2v-8L3 4Z"></path></svg>Qualifies leads before they reach you</li>
+              <li class="flex gap-3"><svg class="w-5 h-5 text-teal-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path stroke-linecap="round" d="M3 10h18M8 3v4M16 3v4"></path></svg>Books appointments into your calendar</li>
+              <li class="flex gap-3"><svg class="w-5 h-5 text-teal-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 0 0-5.4-1.8M9 20H2v-2a4 4 0 0 1 7-2.6M15 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path></svg>Frees staff hours for real conversations</li>
+            </ul>
+            <a href="#smart-bots" class="mt-auto inline-flex items-center gap-2 font-semibold text-teal-300 hover:text-teal-200">Learn more <span class="sr-only">about Smart Bots</span><span aria-hidden="true">→</span></a>
+          </article>
+
+          <!-- Card 2: Wallet Pass Loyalty -->
+          <article class="lift reveal bg-navy-800 border border-white/10 rounded-2xl p-7 flex flex-col">
+            <div class="w-12 h-12 rounded-xl bg-amber-400/15 text-amber-400 flex items-center justify-center mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"></rect><path stroke-linecap="round" d="M3 10h18M16 15h2"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Loyalty Programs with Wallet Passes</h3>
+            <p class="text-slate-300 mb-6">Digital loyalty cards delivered straight to Apple Wallet and Google Wallet. Customers add them with one tap, and stamps, points, and offers update in real time.</p>
+            <ul class="space-y-3 mb-8 text-sm text-slate-200">
+              <li class="flex gap-3"><svg class="w-5 h-5 text-amber-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2Z"></path></svg>One-tap add, no app download</li>
+              <li class="flex gap-3"><svg class="w-5 h-5 text-amber-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m12 3 2.7 5.5 6 .9-4.4 4.2 1 6L12 16.8 6.6 19.6l1-6L3.4 9.4l6-.9L12 3Z"></path></svg>Stamps, points, and VIP tiers</li>
+              <li class="flex gap-3"><svg class="w-5 h-5 text-amber-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.4-1.4A2 2 0 0 1 18 14.2V11a6 6 0 0 0-12 0v3.2a2 2 0 0 1-.6 1.4L4 17h5m6 0a3 3 0 1 1-6 0"></path></svg>Personalized offers on lock screens</li>
+              <li class="flex gap-3"><svg class="w-5 h-5 text-amber-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h5M20 20v-5h-5M5 15a7 7 0 0 0 13 2M19 9A7 7 0 0 0 6 7"></path></svg>Drives more repeat visits</li>
+            </ul>
+            <a href="#wallet-passes" class="mt-auto inline-flex items-center gap-2 font-semibold text-teal-300 hover:text-teal-200">Learn more <span class="sr-only">about Wallet Pass loyalty programs</span><span aria-hidden="true">→</span></a>
+          </article>
+
+          <!-- Card 3: Landing Pages -->
+          <article class="lift reveal bg-navy-800 border border-white/10 rounded-2xl p-7 flex flex-col">
+            <div class="w-12 h-12 rounded-xl bg-teal-400/15 text-teal-400 flex items-center justify-center mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path stroke-linecap="round" d="M3 9h18M8 14h8"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Corner Café</h3>
+            <p class="text-slate-300 mb-6">GOLD</p>
+            <ul class="space-y-3 mb-8 text-sm text-slate-200">
+              <li class="flex gap-3"><svg class="w-5 h-5 text-teal-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 3 4 14h7l-1 7 9-11h-7l1-7Z"></path></svg>Loads fast on every phone</li>
+              <li class="flex gap-3"><svg class="w-5 h-5 text-teal-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12M8 7l3-3M8 7l3 3M16 17H4m12 0-3-3m3 3-3 3"></path></svg>A/B testing to find what works</li>
+              <li class="flex gap-3"><svg class="w-5 h-5 text-teal-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>Analytics connected and reporting</li>
+              <li class="flex gap-3"><svg class="w-5 h-5 text-teal-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="4"></circle></svg>Higher lead capture rates</li>
+            </ul>
+            <a href="#landing-pages" class="mt-auto inline-flex items-center gap-2 font-semibold text-teal-300 hover:text-teal-200">Learn more <span class="sr-only">about Conversion-Ready Landing Pages</span><span aria-hidden="true">Wallet Pass Loyalty</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- SMART BOTS DETAIL: In-depth explanation (target of card 1 "Learn more")       -->
+    <!-- ============================================================================ -->
+    <section id="smart-bots" data-section="smart-bots-detail" class="scroll-mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <p class="text-sm font-semibold uppercase tracking-widest text-teal-300 mb-3">Smart Bots</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-5">A front desk that never sleeps.</h2>
+          <p class="text-lg text-slate-300 mb-6">Using PayMeGPT, we train an assistant on your services, hours, prices, and policies. It answers the questions your team hears every day, asks the right follow-ups to spot serious buyers, and drops booked appointments right into your calendar.</p>
+          <p class="text-slate-300">It works wherever your customers already are: your website chat, Facebook and Instagram messages, SMS, and more. When something needs a human, it hands the conversation to your team with the full context.</p>
+        </div>
+        <div class="reveal grid sm:grid-cols-2 gap-4">
+          <div class="bg-navy-800 border border-white/10 rounded-2xl p-6"><p class="font-display text-3xl font-bold text-teal-400 mb-1">Hours back</p><p class="text-sm text-slate-300">Repetitive questions handled automatically, so staff focus on in-person service.</p></div>
+          <div class="bg-navy-800 border border-white/10 rounded-2xl p-6"><p class="font-display text-3xl font-bold text-teal-400 mb-1">No missed leads</p><p class="text-sm text-slate-300">Late-night and weekend inquiries get an instant, helpful answer.</p></div>
+          <div class="bg-navy-800 border border-white/10 rounded-2xl p-6"><p class="font-display text-3xl font-bold text-teal-400 mb-1">Better leads</p><p class="text-sm text-slate-300">Visitors are qualified before they ever reach your inbox.</p></div>
+          <div class="bg-navy-800 border border-white/10 rounded-2xl p-6"><p class="font-display text-3xl font-bold text-teal-400 mb-1">Your voice</p><p class="text-sm text-slate-300">Tone and answers match your brand, and you approve them.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- WALLET PASSES DETAIL: In-depth explanation (target of card 2 "Learn more")    -->
+    <!-- ============================================================================ -->
+    <section id="wallet-passes" data-section="wallet-passes-detail" class="scroll-mt-20 bg-navy-950 border-y border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Visual: sample wallet pass -->
+        <div class="reveal order-2 lg:order-1 flex justify-center" aria-hidden="true">
+          <div class="w-full max-w-sm rounded-3xl p-6 bg-gradient-to-br from-amber-400 to-amber-500 text-navy-950 shadow-2xl">
+            <div class="flex justify-between items-start mb-8">
+              <div><p class="text-xs font-semibold uppercase tracking-widest opacity-80">Loyalty Card</p><p class="font-display text-2xl font-bold">Corner Café</p></div>
+              <p class="font-display font-bold text-sm bg-navy-950/10 px-3 py-1 rounded-full">GOLD</p>
+            </div>
+            <p class="text-xs font-semibold uppercase tracking-widest opacity-80 mb-2">Stamps</p>
+            <div class="grid grid-cols-5 gap-2 mb-8">
+              <span class="aspect-square rounded-full bg-navy-950"></span><span class="aspect-square rounded-full bg-navy-950"></span><span class="aspect-square rounded-full bg-navy-950"></span><span class="aspect-square rounded-full bg-navy-950"></span><span class="aspect-square rounded-full bg-navy-950"></span>
+              <span class="aspect-square rounded-full bg-navy-950"></span><span class="aspect-square rounded-full bg-navy-950"></span><span class="aspect-square rounded-full border-2 border-navy-950/40"></span><span class="aspect-square rounded-full border-2 border-navy-950/40"></span><span class="aspect-square rounded-full border-2 border-navy-950/40"></span>
+            </div>
+            <div class="bg-white/90 rounded-xl p-4 text-sm font-medium">3 more visits until your free drink ☕</div>
+          </div>
+        </div>
+        <div class="reveal order-1 lg:order-2">
+          <p class="text-sm font-semibold uppercase tracking-widest text-amber-400 mb-3">Wallet Pass Loyalty</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-5">The loyalty card that lives on their phone.</h2>
+          <p class="text-lg text-slate-300 mb-6">Paper punch cards get lost. Apps don't get downloaded. Wallet passes sit right next to your customers' boarding passes and payment cards in Apple Wallet and Google Wallet, added in a single tap from a link, QR code, or text.</p>
+          <ul class="space-y-3 text-slate-300">
+            <li class="flex gap-3"><span class="text-amber-400 font-bold" aria-hidden="true">✓</span>Stamps, points, and tiers update instantly after each visit.</li>
+            <li class="flex gap-3"><span class="text-amber-400 font-bold" aria-hidden="true">✓</span>Send timely offers that appear on the lock screen. No email open rates to worry about.</li>
+            <li class="flex gap-3"><span class="text-amber-400 font-bold" aria-hidden="true">✓</span>PayMeGPT tracks who's coming back, so you can reward your best regulars.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- LANDING PAGES DETAIL: In-depth explanation (target of card 3 "Learn more")    -->
+    <!-- ============================================================================ -->
+    <section id="landing-pages" data-section="landing-pages-detail" class="scroll-mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <p class="text-sm font-semibold uppercase tracking-widest text-teal-300 mb-3">Landing Pages</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-5">One page. One goal. More customers.</h2>
+          <p class="text-lg text-slate-300 mb-6">Whether it's booking a consult, claiming an offer, or joining a waitlist, we build pages that guide visitors to one clear action. PayMeGPT helps us draft and refine headlines and copy based on what actually gets people to act.</p>
+          <p class="text-slate-300">We test versions side by side, connect your analytics, and plug captured leads straight into your Smart Bot or follow-up flows, so nobody slips through the cracks.</p>
+        </div>
+        <ol class="reveal space-y-4">
+          <li class="flex gap-4 bg-navy-800 border border-white/10 rounded-2xl p-5"><span class="font-display font-bold text-teal-400">01</span><div><p class="font-semibold text-white">Goal-first structure</p><p class="text-sm text-slate-300">Every section points toward a single, clear action.</p></div></li>
+          <li class="flex gap-4 bg-navy-800 border border-white/10 rounded-2xl p-5"><span class="font-display font-bold text-teal-400">02</span><div><p class="font-semibold text-white">Mobile speed</p><p class="text-sm text-slate-300">Lightweight builds that load quickly on any connection.</p></div></li>
+          <li class="flex gap-4 bg-navy-800 border border-white/10 rounded-2xl p-5"><span class="font-display font-bold text-teal-400">03</span><div><p class="font-semibold text-white">Test and learn</p><p class="text-sm text-slate-300">A/B tests show which headline, offer, or layout wins.</p></div></li>
+          <li class="flex gap-4 bg-navy-800 border border-white/10 rounded-2xl p-5"><span class="font-display font-bold text-teal-400">04</span><div><p class="font-semibold text-white">Clear reporting</p><p class="text-sm text-slate-300">See visits, sign-ups, and conversion rates in one place.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- HOW IT WORKS: Four-step timeline                                              -->
+    <!-- Notes: Vertical on mobile, horizontal on large screens.                       -->
+    <!-- ============================================================================ -->
+    <section id="how-it-works" data-section="how-it-works" class="scroll-mt-20 bg-navy-950 border-y border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20 md:py-28">
+        <div class="max-w-3xl mb-14 reveal">
+          <p class="text-sm font-semibold uppercase tracking-widest text-teal-300 mb-3">How it works</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-5">From first call to running on autopilot.</h2>
+          <p class="text-lg text-slate-300">A simple, guided process. You bring the business knowledge; we handle the technology.</p>
+        </div>
+        <ol class="timeline grid gap-8 lg:grid-cols-4 relative">
+          <li class="reveal relative pl-10 lg:pl-0 lg:pt-12">
+            <span class="absolute left-0 top-0 lg:top-0 w-8 h-8 rounded-full bg-teal-400 text-navy-950 font-display font-bold flex items-center justify-center">1</span>
+            <h3 class="text-lg font-bold text-white mb-2">Discovery call</h3>
+            <p class="text-slate-300 text-sm">A free 30-minute conversation about your goals, customers, and where time or revenue is slipping away.</p>
+          </li>
+          <li class="reveal relative pl-10 lg:pl-0 lg:pt-12">
+            <span class="absolute left-0 top-0 w-8 h-8 rounded-full bg-teal-400 text-navy-950 font-display font-bold flex items-center justify-center">2</span>
+            <h3 class="text-lg font-bold text-white mb-2">Custom setup</h3>
+            <p class="text-slate-300 text-sm">We configure your bots, wallet passes, and pages on PayMeGPT, matched to your brand and connected to your tools.</p>
+          </li>
+          <li class="reveal relative pl-10 lg:pl-0 lg:pt-12">
+            <span class="absolute left-0 top-0 w-8 h-8 rounded-full bg-teal-400 text-navy-950 font-display font-bold flex items-center justify-center">3</span>
+            <h3 class="text-lg font-bold text-white mb-2">Launch &amp; training</h3>
+            <p class="text-slate-300 text-sm">We go live together and show your team exactly how to use, update, and get the most from everything.</p>
+          </li>
+          <li class="reveal relative pl-10 lg:pl-0 lg:pt-12">
+            <span class="absolute left-0 top-0 w-8 h-8 rounded-full bg-amber-400 text-navy-950 font-display font-bold flex items-center justify-center">4</span>
+            <h3 class="text-lg font-bold text-white mb-2">Ongoing optimization</h3>
+            <p class="text-slate-300 text-sm">Monthly check-ins, performance reports, and continuous tweaks so results keep improving over time.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- RESULTS: Metrics and testimonial cards                                        -->
+    <!-- Notes: Figures and quotes are PLACEHOLDERS — replace with real client data    -->
+    <!--        before publishing.                                                     -->
+    <!-- ============================================================================ -->
+    <section id="results" data-section="results" class="scroll-mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20 md:py-28">
+        <div class="max-w-3xl mb-14 reveal">
+          <p class="text-sm font-semibold uppercase tracking-widest text-teal-300 mb-3">Results</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-5">Outcomes that show up on the bottom line.</h2>
+        </div>
+        <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-16">
+          <div class="reveal bg-navy-800 border border-white/10 rounded-2xl p-6 text-center">
+            <dt class="text-sm text-slate-300 order-2">Staff hours saved per month</dt>
+            <dd class="font-display text-3xl sm:text-4xl font-extrabold text-teal-400 mb-1"><span class="counter" data-target="40">40</span>+</dd>
+          </div>
+          <div class="reveal bg-navy-800 border border-white/10 rounded-2xl p-6 text-center">
+            <dt class="text-sm text-slate-300">Increase in repeat visits</dt>
+            <dd class="font-display text-3xl sm:text-4xl font-extrabold text-amber-400 mb-1"><span class="counter" data-target="32">32</span>%</dd>
+          </div>
+          <div class="reveal bg-navy-800 border border-white/10 rounded-2xl p-6 text-center">
+            <dt class="text-sm text-slate-300">Lift in lead capture rate</dt>
+            <dd class="font-display text-3xl sm:text-4xl font-extrabold text-teal-400 mb-1"><span class="counter" data-target="2">2</span>.5×</dd>
+          </div>
+          <div class="reveal bg-navy-800 border border-white/10 rounded-2xl p-6 text-center">
+            <dt class="text-sm text-slate-300">Customer questions answered instantly</dt>
+            <dd class="font-display text-3xl sm:text-4xl font-extrabold text-teal-400 mb-1"><span class="counter" data-target="85">85</span>%</dd>
+          </div>
+        </dl>
+
+        <div class="testimonials-grid grid md:grid-cols-3 gap-6">
+          <figure class="lift reveal bg-navy-800 border border-white/10 rounded-2xl p-7 flex flex-col">
+            <p class="text-amber-400 mb-4" aria-label="5 out of 5 stars">★★★★★</p>
+            <blockquote class="text-slate-200 mb-6">"Our bot books about a third of our appointments now, mostly after hours. My front desk finally has time to actually greet people."</blockquote>
+            <figcaption class="mt-auto"><p class="font-semibold text-white">Maria Delgado</p><p class="text-sm text-slate-400">Owner, Bright Smile Dental</p></figcaption>
+          </figure>
+          <figure class="lift reveal bg-navy-800 border border-white/10 rounded-2xl p-7 flex flex-col">
+            <p class="text-amber-400 mb-4" aria-label="5 out of 5 stars">★★★★★</p>
+            <blockquote class="text-slate-200 mb-6">"We swapped paper punch cards for wallet passes. Regulars love it, and the lock-screen offers bring people back on slow afternoons."</blockquote>
+            <figcaption class="mt-auto"><p class="font-semibold text-white">James Okafor</p><p class="text-sm text-slate-400">Co-founder, Ember Coffee Co.</p></figcaption>
+          </figure>
+          <figure class="lift reveal bg-navy-800 border border-white/10 rounded-2xl p-7 flex flex-col">
+            <p class="text-amber-400 mb-4" aria-label="5 out of 5 stars">★★★★★</p>
+            <blockquote class="text-slate-200 mb-6">"The new landing page more than doubled our consultation requests in the first month. And they explained every step without the jargon."</blockquote>
+            <figcaption class="mt-auto"><p class="font-semibold text-white">Rachel Kim</p><p class="text-sm text-slate-400">Director, Summit Home Services</p></figcaption>
+          </figure>
+        </div>
+        <p class="mt-8 text-xs text-slate-400">Figures shown are representative examples of client outcomes. Individual results vary.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- FAQ: Accordion with pricing, setup time, and data privacy questions           -->
+    <!-- Notes: Copy a .faq-item block to add a question. Keyboard accessible.         -->
+    <!-- ============================================================================ -->
+    <section id="faq" data-section="faq" class="scroll-mt-20 bg-navy-950 border-y border-white/5">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-12 py-20 md:py-28">
+        <div class="text-center mb-12 reveal">
+          <p class="text-sm font-semibold uppercase tracking-widest text-teal-300 mb-3">FAQ</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white">Straight answers.</h2>
+        </div>
+        <div class="space-y-4 reveal">
+          <div class="faq-item bg-navy-800 border border-white/10 rounded-2xl">
+            <h3>
+              <button class="faq-trigger w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-semibold text-white" aria-expanded="false" aria-controls="faq-1">
+                How does pricing work? Are there hidden fees?
+                <svg class="faq-icon w-5 h-5 text-teal-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"></path></svg>
+              </button>
+            </h3>
+            <div id="faq-1" class="faq-panel" role="region"><div><p class="px-6 pb-5 text-slate-300">No hidden fees. After your discovery call, you get a written quote with a one-time setup fee and a flat monthly plan that covers platform costs, support, and optimization. No long-term contracts. You can cancel with 30 days' notice.</p></div></div>
+          </div>
+          <div class="faq-item bg-navy-800 border border-white/10 rounded-2xl">
+            <h3>
+              <button class="faq-trigger w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-semibold text-white" aria-expanded="false" aria-controls="faq-2">
+                How long does setup take?
+                <svg class="faq-icon w-5 h-5 text-teal-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"></path></svg>
+              </button>
+            </h3>
+            <div id="faq-2" class="faq-panel" role="region"><div><p class="px-6 pb-5 text-slate-300">Most single-service projects go live in 1–2 weeks. A full package with Smart Bots, Wallet Pass loyalty, and a landing page typically launches within 3–4 weeks, depending on how quickly we receive your content and approvals.</p></div></div>
+          </div>
+          <div class="faq-item bg-navy-800 border border-white/10 rounded-2xl">
+            <h3>
+              <button class="faq-trigger w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-semibold text-white" aria-expanded="false" aria-controls="faq-3">
+                How is my customers' data protected?
+                <svg class="faq-icon w-5 h-5 text-teal-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"></path></svg>
+              </button>
+            </h3>
+            <div id="faq-3" class="faq-panel" role="region"><div><p class="px-6 pb-5 text-slate-300">Your data stays yours. Customer information is encrypted in transit and at rest, we never sell it, and we only collect what each tool needs to work. We'll walk you through exactly what's stored and help you keep your privacy policy up to date.</p></div></div>
+          </div>
+          <div class="faq-item bg-navy-800 border border-white/10 rounded-2xl">
+            <h3>
+              <button class="faq-trigger w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-semibold text-white" aria-expanded="false" aria-controls="faq-4">
+                Do I need technical skills to use this?
+                <svg class="faq-icon w-5 h-5 text-teal-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"></path></svg>
+              </button>
+            </h3>
+            <div id="faq-4" class="faq-panel" role="region"><div><p class="px-6 pb-5 text-slate-300">Not at all. We handle the setup on PayMeGPT and train your team on the few things you'll want to do yourself, like updating offers or reviewing conversations.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- CONTACT: Booking request form                                                 -->
+    <!-- Notes: Submits via fetch() to window.__formWebhookUrl or this page + /submit. -->
+    <!--        Shows a thank-you message on success.                                  -->
+    <!-- ============================================================================ -->
+    <section id="contact" data-section="contact" class="scroll-mt-20 relative overflow-hidden">
+      <div class="absolute inset-0 hero-glow" aria-hidden="true"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20 md:py-28 grid lg:grid-cols-2 gap-12">
+        <div class="reveal">
+          <p class="text-sm font-semibold uppercase tracking-widest text-teal-300 mb-3">Book a free consultation</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-5">Let's find your quickest AI win.</h2>
+          <p class="text-lg text-slate-300 mb-8">Tell us a little about your business. We'll reach out within one business day to schedule a free 30-minute call. No pressure, no jargon.</p>
+          <ul class="space-y-4 text-slate-200">
+            <li class="flex gap-3"><span class="text-teal-400" aria-hidden="true">✓</span>A clear picture of where AI can save time or grow revenue</li>
+            <li class="flex gap-3"><span class="text-teal-400" aria-hidden="true">✓</span>An honest recommendation, even if it's "not yet"</li>
+            <li class="flex gap-3"><span class="text-teal-400" aria-hidden="true">✓</span>A transparent quote if you'd like to move forward</li>
+          </ul>
+        </div>
+
+        <div class="reveal bg-navy-800 border border-white/10 rounded-2xl p-6 sm:p-8">
+          <form id="contact-form" novalidate="" class="space-y-5">
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="full_name" class="block text-sm font-medium text-slate-200 mb-2">Full name</label>
+                <input id="full_name" name="full_name" type="text" autocomplete="name" class="w-full bg-navy-900 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:border-teal-400 focus:outline-none" placeholder="Jane Smith">
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-slate-200 mb-2">Email <span class="text-teal-300">*</span></label>
+                <input id="email" name="email" type="email" required="" autocomplete="email" class="w-full bg-navy-900 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:border-teal-400 focus:outline-none" placeholder="jane@business.com">
+              </div>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="phone" class="block text-sm font-medium text-slate-200 mb-2">Phone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" class="w-full bg-navy-900 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:border-teal-400 focus:outline-none" placeholder="(555) 123-4567">
+              </div>
+              <div>
+                <label for="business" class="block text-sm font-medium text-slate-200 mb-2">Business name</label>
+                <input id="business" name="business" type="text" autocomplete="organization" class="w-full bg-navy-900 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:border-teal-400 focus:outline-none" placeholder="Corner Café">
+              </div>
+            </div>
+            <div>
+              <label for="interest" class="block text-sm font-medium text-slate-200 mb-2">I'm most interested in</label>
+              <select id="interest" name="interest" class="w-full bg-navy-900 border border-white/15 rounded-lg px-4 py-3 text-white focus:border-teal-400 focus:outline-none">
+                <option>Not sure yet, help me decide</option>
+                <option>Smart Bots</option>
+                <option>Wallet Pass Loyalty Program</option>
+                <option>Conversion-Ready Landing Page</option>
+                <option>All of the above</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-slate-200 mb-2">What would you like to improve?</label>
+              <textarea id="message" name="message" rows="4" class="w-full bg-navy-900 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:border-teal-400 focus:outline-none" placeholder="e.g. We miss calls after hours and want more repeat customers."></textarea>
+            </div>
+            <p id="form-error" class="hidden text-sm text-amber-400" role="alert"></p>
+            <button id="submit-btn" type="submit" class="w-full bg-teal-400 hover:bg-teal-300 disabled:opacity-60 text-navy-950 font-semibold py-4 rounded-xl transition-colors">Book My Free Consultation</button>
+            <p class="text-xs text-slate-400 text-center">We respect your privacy. No spam, ever.</p>
+          </form>
+          <div id="form-success" class="hidden text-center py-10" role="status" aria-live="polite">
+            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-teal-400/15 text-teal-400 flex items-center justify-center">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"></path></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">Thank you!</h3>
+            <p class="text-slate-300">We'll be in touch within one business day to schedule your free consultation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================================ -->
+  <!-- FOOTER: Navigation, contact details, and copyright                            -->
+  <!-- ============================================================================ -->
+  <footer data-section="footer" class="bg-navy-950 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-14 grid gap-10 md:grid-cols-4">
+      <div class="md:col-span-2">
+        <a href="#top" class="font-display font-bold text-xl text-white">buhler<span class="text-teal-400">works</span></a>
+        <p class="mt-4 text-sm text-slate-400 max-w-sm">Enterprise-grade AI growth tools for small and medium-sized businesses, powered by PayMeGPT.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h2 class="text-sm font-semibold text-white mb-4">Explore</h2>
+        <ul class="space-y-2 text-sm text-slate-400">
+          <li><a href="#services" class="hover:text-teal-300">Services</a></li>
+          <li><a href="#how-it-works" class="hover:text-teal-300">How It Works</a></li>
+          <li><a href="#results" class="hover:text-teal-300">Results</a></li>
+          <li><a href="#faq" class="hover:text-teal-300">FAQ</a></li>
+          <li><a href="#contact" class="hover:text-teal-300">Book a Consultation</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="text-sm font-semibold text-white mb-4">Contact</h2>
+        <address class="not-italic space-y-2 text-sm text-slate-400">
+          <p><a href="mailto:hello@buhlerworks.com" class="hover:text-teal-300">hello@buhlerworks.com</a></p>
+          <p><a href="https://buhlerworks.com" class="hover:text-teal-300">buhlerworks.com</a></p>
+          <p>Mon–Fri, 9am–5pm</p>
+        </address>
+      </div>
+    </div>
+    <div class="border-t border-white/5">
+      <p class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-6 text-xs text-slate-400">© 2026 buhlerworks. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================================ -->
+  <!-- DEPLOYMENT NOTES: Cloudflare Pages + buhlerworks.com                          -->
+  <!-- Project structure (root of your repo / upload folder):                        -->
+  <!--   index.html     (this file)                                                  -->
+  <!--   robots.txt     (contents below)                                             -->
+  <!--   sitemap.xml    (contents below)                                             -->
+  <!--   og-image.png   (1200x630 social share image)                                -->
+  <!-- Cloudflare Pages: create project, framework preset "None", build command      -->
+  <!-- empty, output directory "/". Then Custom domains, add buhlerworks.com         -->
+  <!-- and www.buhlerworks.com (redirect www to the apex).                           -->
+  <!--                                                                               -->
+  <!-- robots.txt:                                                                   -->
+  <!--   User-agent: *                                                               -->
+  <!--   Allow: /                                                                    -->
+  <!--   Sitemap: https://buhlerworks.com/sitemap.xml                                -->
+  <!--                                                                               -->
+  <!-- sitemap.xml:                                                                  -->
+  <!--   <?xml version="1.0" encoding="UTF-8"?>                                      -->
+  <!--   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">                -->
+  <!--     <url>                                                                     -->
+  <!--       <loc>https://buhlerworks.com/</loc>                                     -->
+  <!--       <lastmod>2026-01-01</lastmod>                                           -->
+  <!--       <changefreq>monthly</changefreq>                                        -->
+  <!--       <priority>1.0</priority>                                                -->
+  <!--     </url>                                                                    -->
+  <!--   </urlset>                                                                   -->
+  <!-- ============================================================================ -->
+
+  <script>
+    // ===== REDUCED MOTION CHECK =====
+    // Purpose: Detects the visitor's "reduce motion" OS setting
+    // Triggers: On page load
+    var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // ===== MOBILE MENU TOGGLE =====
+    // Purpose: Opens/closes the mobile nav and updates aria-expanded
+    // Triggers: Click on the hamburger button or any menu link
+    (function () {
+      var btn = document.getElementById('menu-toggle');
+      var menu = document.getElementById('mobile-menu');
+      btn.addEventListener('click', function () {
+        var open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        btn.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+        menu.classList.toggle('hidden');
+      });
+      menu.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          menu.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.setAttribute('aria-label', 'Open menu');
+        });
+      });
+    })();
+
+    // ===== SCROLL REVEAL =====
+    // Purpose: Fades in .reveal elements as they scroll into view (staggered for siblings)
+    // Triggers: IntersectionObserver; skipped entirely when reduced motion is on
+    (function () {
+      if (prefersReduced || !('IntersectionObserver' in window)) return;
+      document.documentElement.classList.add('js-reveal');
+      var items = document.querySelectorAll('.reveal');
+      items.forEach(function (el) {
+        var siblings = Array.prototype.filter.call(el.parentElement.children, function (c) { return c.classList.contains('reveal'); });
+        var i = siblings.indexOf(el);
+        el.style.transitionDelay = Math.min(i, 3) * 100 + 'ms';
+      });
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
+        });
+      }, { rootMargin: '0px 0px -60px 0px', threshold: 0.1 });
+      items.forEach(function (el) { io.observe(el); });
+    })();
+
+    // ===== STAT COUNTERS =====
+    // Purpose: Counts the results numbers up from 0 when visible
+    // Triggers: IntersectionObserver; numbers stay static with reduced motion
+    (function () {
+      if (prefersReduced || !('IntersectionObserver' in window)) return;
+      var counters = document.querySelectorAll('.counter');
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          var el = entry.target, target = +el.dataset.target, start = null;
+          function step(ts) {
+            if (!start) start = ts;
+            var p = Math.min((ts - start) / 1200, 1);
+            el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+            if (p < 1) requestAnimationFrame(step);
+          }
+          requestAnimationFrame(step);
+          io.unobserve(el);
+        });
+      }, { threshold: 0.5 });
+      counters.forEach(function (c) { io.observe(c); });
+    })();
+
+    // ===== FAQ ACCORDION =====
+    // Purpose: Expands/collapses answers; works with mouse, Enter, and Space
+    // Triggers: Click on a question button
+    document.querySelectorAll('.faq-trigger').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var panel = document.getElementById(btn.getAttribute('aria-controls'));
+        var open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        panel.classList.toggle('open', !open);
+      });
+    });
+
+    // ===== CONTACT FORM SUBMIT =====
+    // Purpose: Validates email, POSTs JSON to the webhook, shows success or error
+    // Triggers: Form submit
+    (function () {
+      var form = document.getElementById('contact-form');
+      var btn = document.getElementById('submit-btn');
+      var errorEl = document.getElementById('form-error');
+      var success = document.getElementById('form-success');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        errorEl.classList.add('hidden');
+        var email = form.email.value.trim();
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          errorEl.textContent = 'Please enter a valid email address.';
+          errorEl.classList.remove('hidden');
+          form.email.focus();
+          return;
+        }
+
+        var originalText = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
+
+        var webhookUrl = window.__formWebhookUrl || (window.location.origin + window.location.pathname.replace(/\/$/, '') + '/submit');
+        fetch(webhookUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            contactEmail: email,
+            contactName: form.full_name.value.trim(),
+            contactPhone: form.phone.value.trim() || undefined,
+            data: {
+              business: form.business.value.trim(),
+              interest: form.interest.value,
+              message: form.message.value.trim()
+            }
+          })
+        })
+        .then(function (r) { if (!r.ok) throw new Error('Request failed'); return r.json().catch(function () { return {}; }); })
+        .then(function () {
+          form.classList.add('hidden');
+          success.classList.remove('hidden');
+        })
+        .catch(function () {
+          errorEl.textContent = 'Sorry, something went wrong. Please try again or email hello@buhlerworks.com.';
+          errorEl.classList.remove('hidden');
+          btn.disabled = false;
+          btn.textContent = originalText;
+        });
+      });
+    })();
+  </script>
+
+</body></html>
