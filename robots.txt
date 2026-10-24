@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jebworks48.github.io/buhlerworks-agency/sitemap.xml
