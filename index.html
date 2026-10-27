@@ -280,7 +280,7 @@
       overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
       function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
       var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
-      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
       document.body.appendChild(overlay);
       var pBtn=document.getElementById('lp-pay-success-btn');
       if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
@@ -357,7 +357,7 @@
       overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
       function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
       var subTxt=successSubtext||'Thank you for your order.';
-      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
       document.body.appendChild(overlay);
       var cBtn=document.getElementById('lp-cart-success-btn');
       if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
@@ -658,6 +658,115 @@
           </div>
         </dl>
 
+
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- ABOUT US: Personal introduction, skills, experience timeline, and education   -->
+    <!-- Notes: All bracketed text is PLACEHOLDER content. Replace with details from    -->
+    <!--        JEB_Resume Full.pdf before publishing.                                  -->
+    <!-- ============================================================================ -->
+    <section id="about" data-section="about" class="scroll-mt-20 bg-navy-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20 md:py-28">
+
+        <!-- Intro: headline and bio -->
+        <div class="grid lg:grid-cols-12 gap-10 items-start mb-20">
+          <div class="lg:col-span-7 reveal">
+            <p class="text-sm font-semibold uppercase tracking-widest text-teal-300 mb-3">About us</p>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-3">[Full Name]</h2>
+            <p class="font-display text-lg text-amber-400 mb-6">[Professional Title]</p>
+            <p class="text-lg text-slate-300 mb-5">[Opening bio paragraph: a warm, confident introduction covering who you are, what you do, and why you do it. Two to three sentences drawn from the resume summary.]</p>
+            <p class="text-slate-300">[Second paragraph: what drives your work with small and medium-sized businesses, and the kind of outcomes you care about most.]</p>
+          </div>
+          <div class="lg:col-span-5 reveal">
+            <img src="[Headshot URL]" alt="[Descriptive alt text for headshot, e.g. Portrait of Jeb Buhler]" class="w-full max-w-sm mx-auto rounded-3xl border border-white/10 shadow-2xl object-cover aspect-square">
+          </div>
+        </div>
+
+        <!-- Skills: grouped tag clouds -->
+        <div class="mb-20 reveal">
+          <h3 class="text-2xl font-bold text-white mb-8">Skills &amp; expertise</h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-navy-800 border border-white/10 rounded-2xl p-6">
+              <p class="font-display font-semibold text-white mb-4">Technical tools</p>
+              <ul class="flex flex-wrap gap-2" aria-label="Technical tools">
+                <li class="text-sm text-teal-300 bg-teal-400/10 border border-teal-400/20 rounded-full px-3 py-1">[Tool 1]</li>
+                <li class="text-sm text-teal-300 bg-teal-400/10 border border-teal-400/20 rounded-full px-3 py-1">[Tool 2]</li>
+                <li class="text-sm text-teal-300 bg-teal-400/10 border border-teal-400/20 rounded-full px-3 py-1">[Tool 3]</li>
+                <li class="text-sm text-teal-300 bg-teal-400/10 border border-teal-400/20 rounded-full px-3 py-1">[Tool 4]</li>
+              </ul>
+            </div>
+            <div class="bg-navy-800 border border-white/10 rounded-2xl p-6">
+              <p class="font-display font-semibold text-white mb-4">Core competencies</p>
+              <ul class="flex flex-wrap gap-2" aria-label="Core competencies">
+                <li class="text-sm text-amber-400 bg-amber-400/10 border border-amber-400/20 rounded-full px-3 py-1">[Competency 1]</li>
+                <li class="text-sm text-amber-400 bg-amber-400/10 border border-amber-400/20 rounded-full px-3 py-1">[Competency 2]</li>
+                <li class="text-sm text-amber-400 bg-amber-400/10 border border-amber-400/20 rounded-full px-3 py-1">[Competency 3]</li>
+                <li class="text-sm text-amber-400 bg-amber-400/10 border border-amber-400/20 rounded-full px-3 py-1">[Competency 4]</li>
+              </ul>
+            </div>
+            <div class="bg-navy-800 border border-white/10 rounded-2xl p-6">
+              <p class="font-display font-semibold text-white mb-4">Areas of expertise</p>
+              <ul class="flex flex-wrap gap-2" aria-label="Areas of expertise">
+                <li class="text-sm text-slate-200 bg-white/5 border border-white/10 rounded-full px-3 py-1">[Area 1]</li>
+                <li class="text-sm text-slate-200 bg-white/5 border border-white/10 rounded-full px-3 py-1">[Area 2]</li>
+                <li class="text-sm text-slate-200 bg-white/5 border border-white/10 rounded-full px-3 py-1">[Area 3]</li>
+                <li class="text-sm text-slate-200 bg-white/5 border border-white/10 rounded-full px-3 py-1">[Area 4]</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience: vertical timeline -->
+        <div class="mb-20">
+          <h3 class="text-2xl font-bold text-white mb-10 reveal">Experience</h3>
+          <ol class="relative border-l-2 border-teal-400/30 ml-3 md:ml-4 space-y-10">
+            <li class="reveal relative pl-8 md:pl-10">
+              <span class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-teal-400 ring-4 ring-navy-900" aria-hidden="true"></span>
+              <article class="bg-navy-800 border border-white/10 rounded-2xl p-6 lift">
+                <p class="text-xs font-semibold uppercase tracking-widest text-teal-300 mb-2">[Start Year] – [End Year]</p>
+                <h4 class="text-xl font-bold text-white">[Job Title]</h4>
+                <p class="text-sm text-slate-400 mb-4">[Company Name]</p>
+                <ul class="space-y-2 text-sm text-slate-300 list-disc pl-5 marker:text-teal-400">
+                  <li>[Impact-focused achievement with a measurable result]</li>
+                  <li>[Second achievement, condensed from the resume]</li>
+                  <li>[Third achievement]</li>
+                </ul>
+              </article>
+            </li>
+            <li class="reveal relative pl-8 md:pl-10">
+              <span class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-amber-400 ring-4 ring-navy-900" aria-hidden="true"></span>
+              <article class="bg-navy-800 border border-white/10 rounded-2xl p-6 lift">
+                <p class="text-xs font-semibold uppercase tracking-widest text-amber-400 mb-2">[Start Year] – [End Year]</p>
+                <h4 class="text-xl font-bold text-white">[Job Title]</h4>
+                <p class="text-sm text-slate-400 mb-4">[Company Name]</p>
+                <ul class="space-y-2 text-sm text-slate-300 list-disc pl-5 marker:text-amber-400">
+                  <li>[Impact-focused achievement with a measurable result]</li>
+                  <li>[Second achievement]</li>
+                </ul>
+              </article>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Education, certifications, and achievements -->
+        <div class="grid md:grid-cols-2 gap-6 reveal">
+          <div class="bg-navy-800 border border-white/10 rounded-2xl p-6">
+            <h3 class="font-display text-lg font-bold text-white mb-4">Education</h3>
+            <ul class="space-y-4 text-sm text-slate-300">
+              <li><p class="font-semibold text-white">[Degree or Program]</p><p>[Institution], [Year]</p></li>
+              <li><p class="font-semibold text-white">[Certificate or Training]</p><p>[Institution], [Year]</p></li>
+            </ul>
+          </div>
+          <div class="bg-navy-800 border border-white/10 rounded-2xl p-6">
+            <h3 class="font-display text-lg font-bold text-white mb-4">Certifications &amp; achievements</h3>
+            <ul class="space-y-3 text-sm text-slate-300">
+              <li class="flex gap-3"><span class="text-teal-400" aria-hidden="true">✓</span>[Certification or award]</li>
+              <li class="flex gap-3"><span class="text-teal-400" aria-hidden="true">✓</span>[Notable achievement]</li>
+            </ul>
+          </div>
+        </div>
 
       </div>
     </section>
