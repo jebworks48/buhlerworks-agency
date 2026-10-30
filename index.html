@@ -45,6 +45,7 @@
   <!-- Fonts: Sora (geometric headings) + Inter (readable body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preload" as="image" href="https://paymegpt.com/objects/quick-uploads/138/8525ec10a79fc04e.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Sora:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS Play CDN -->
@@ -406,64 +407,29 @@
   <main id="main">
 
     <!-- ============================================================================ -->
-    <!-- HERO: Brand name, value proposition, and primary call to action               -->
-    <!-- Notes: Headline is not animated on purpose (faster page load).                -->
+    <!-- IMMERSIVE HERO: Full-viewport photo with parallax depth and CTA               -->
     <!-- ============================================================================ -->
-    <section id="top" data-section="hero" class="hero-section relative overflow-hidden">
-      <div class="absolute inset-0 hero-glow" aria-hidden="true"></div>
-      <div class="absolute inset-0 grid-lines" aria-hidden="true"></div>
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-16 pb-20 md:pt-28 md:pb-32 grid lg:grid-cols-12 gap-12 items-center">
-        <div class="lg:col-span-7">
-          <p class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold uppercase tracking-widest text-teal-300 bg-teal-400/10 border border-teal-400/20 rounded-full px-4 py-1.5 mb-6">
-            <span class="w-2 h-2 rounded-full bg-teal-400" aria-hidden="true"></span> AI growth agency for SMBs
-          </p>
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6">
-            <span class="text-[#FFD400]">buhlerworks</span> makes <span class="text-teal-400">enterprise-grade AI</span> work for your small business.
-          </h1>
-          <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mb-10">
-            The same automation big brands use to answer customers, reward loyalty, and win leads, set up for you, priced for you, and explained in plain English.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a href="https://paymegpt.com/agents/84863827" target="_blank" rel="noopener" class="inline-flex justify-center items-center gap-2 bg-teal-400 hover:bg-teal-300 text-navy-950 font-semibold text-base px-7 py-4 rounded-xl transition-colors shadow-lg shadow-teal-500/20">
-              Book a Free Consultation
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"></path></svg>
-            </a>
-            <a href="#services" class="inline-flex justify-center items-center border border-white/20 hover:border-teal-400 text-white font-semibold px-7 py-4 rounded-xl transition-colors">Explore Services</a>
-          </div>
-          <p class="mt-8 text-sm text-slate-400">No long contracts · Transparent pricing · Live in weeks, not months</p>
+    <section id="top" data-section="hero" class="immersive-hero flex items-center" style="background-color:#070D1A;">
+      <div class="hero-bg" role="img" aria-label="Modern professional workspace illustrating AI-powered growth for small businesses"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content relative max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-12 py-24 md:py-32">
+        <p class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold uppercase tracking-widest text-teal-300 bg-teal-400/10 border border-teal-400/20 rounded-full px-4 py-1.5 mb-6 fade-up">
+          <span class="w-2 h-2 rounded-full bg-teal-400" aria-hidden="true"></span> AI growth agency for SMBs
+        </p>
+        <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.05] max-w-4xl mb-6 fade-up">
+          <span class="text-[#FFD400]">buhlerworks</span> makes <span class="text-teal-400">enterprise-grade AI</span> work for your business.
+        </h1>
+        <p class="text-lg sm:text-xl text-slate-200 max-w-2xl mb-10 fade-up">
+          The same automation big brands use to answer customers, reward loyalty, and win leads, set up for you, priced for you, and explained in plain English.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 fade-up">
+          <a href="https://paymegpt.com/agents/84863827" target="_blank" rel="noopener" class="hero-cta inline-flex justify-center items-center gap-2 bg-teal-400 hover:bg-teal-300 text-navy-950 font-semibold text-base px-7 py-4 rounded-xl shadow-lg shadow-teal-500/20">
+            Book a Free Consultation
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"></path></svg>
+          </a>
+          <a href="#services" class="hero-cta-ghost inline-flex justify-center items-center border border-white/30 hover:border-teal-400 bg-white/5 backdrop-blur text-white font-semibold px-7 py-4 rounded-xl transition-colors">Explore Services</a>
         </div>
-
-        <!-- Hero visual: compact dashboard preview built with HTML -->
-        <div class="lg:col-span-5 reveal" aria-hidden="true">
-          <div class="bg-navy-800/80 border border-white/10 rounded-2xl p-6 shadow-2xl">
-            <div class="flex items-center justify-between mb-6">
-              <span class="font-display font-semibold text-white">This week</span>
-              <span class="text-xs text-teal-300 bg-teal-400/10 px-2.5 py-1 rounded-full">Live</span>
-            </div>
-            <div class="grid grid-cols-2 gap-4 mb-6">
-              <div class="bg-navy-900 rounded-xl p-4">
-                <p class="text-xs text-slate-400">Chats handled</p>
-                <p class="font-display text-2xl font-bold text-white">1,248</p>
-              </div>
-              <div class="bg-navy-900 rounded-xl p-4">
-                <p class="text-xs text-slate-400">Appointments booked</p>
-                <p class="font-display text-2xl font-bold text-white">86</p>
-              </div>
-              <div class="bg-navy-900 rounded-xl p-4">
-                <p class="text-xs text-slate-400">Wallet passes added</p>
-                <p class="font-display text-2xl font-bold text-amber-400">312</p>
-              </div>
-              <div class="bg-navy-900 rounded-xl p-4">
-                <p class="text-xs text-slate-400">Landing page CVR</p>
-                <p class="font-display text-2xl font-bold text-teal-400">14.2%</p>
-              </div>
-            </div>
-            <div class="bg-navy-900 rounded-xl p-4 space-y-3 text-sm">
-              <p class="bg-navy-700 text-slate-200 rounded-lg rounded-bl-none px-3 py-2 w-fit max-w-[85%]">Do you have anything open Monday?</p>
-              <p class="bg-teal-400 text-navy-950 rounded-lg rounded-br-none px-3 py-2 w-fit max-w-[85%] ml-auto">Yes! 10:30am or 2:00pm. Want me to book one for you?</p>
-            </div>
-          </div>
-        </div>
+        <p class="mt-8 text-sm text-slate-300 fade-up">No long contracts · Transparent pricing · Live in weeks, not months</p>
       </div>
     </section>
 
@@ -472,7 +438,9 @@
     <!-- Notes: 1 column on mobile, 3 on desktop. "Learn more" links jump to the       -->
     <!--        detailed sections below.                                               -->
     <!-- ============================================================================ -->
-    <section id="services" data-section="services" class="services-section bg-navy-950 border-y border-white/5">
+    <section id="services" data-section="services" class="services-section parallax-section bg-navy-950 border-y border-white/5">
+      <div class="parallax-layer" data-speed="0.25" aria-hidden="true" style="background-image:url('https://paymegpt.com/objects/quick-uploads/138/8525ec10a79fc04e.jpg');"></div>
+      <div class="float-orb" data-speed="-0.2" style="width:320px;height:320px;top:10%;right:-80px;" aria-hidden="true"></div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20 md:py-28">
         <div class="max-w-3xl mb-14 reveal">
           <p class="text-sm font-semibold uppercase tracking-widest text-teal-300 mb-3">What we build</p>
@@ -857,8 +825,8 @@
 
   </main>
 
-  <!-- ============================================================================ -->
-  <!-- FOOTER: Navigation, contact details, and copyright                            -->
+      <!-- ============================================================================ -->
+    <!-- FOOTER: Navigation, contact details, and copyright                            -->
   <!-- ============================================================================ -->
   <footer data-section="footer" class="bg-navy-950 border-t border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-14 grid gap-10 md:grid-cols-4">
@@ -923,6 +891,62 @@
     // Purpose: Detects the visitor's "reduce motion" OS setting
     // Triggers: On page load
     var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // ===== PARALLAX + HERO FADE-IN =====
+    // Purpose: Moves background layers and floating orbs at different speeds on scroll (desktop only)
+    // Triggers: requestAnimationFrame on scroll; skipped with reduced motion or on small screens
+    (function () {
+      if (prefersReduced || window.matchMedia('(max-width: 767px)').matches) return;
+      var layers = Array.prototype.slice.call(document.querySelectorAll('.hero-bg, .parallax-layer, .float-orb'));
+      var heroContent = document.querySelector('.immersive-hero .hero-content');
+      var ticking = false;
+      function update() {
+        var y = window.scrollY;
+        var vh = window.innerHeight;
+        layers.forEach(function (el) {
+          var speed = parseFloat(el.dataset.speed || '0.3');
+          if (el.classList.contains('hero-bg')) {
+            el.style.transform = 'translate3d(0,' + (y * 0.35) + 'px,0) scale(1.05)';
+          } else if (el.classList.contains('float-orb')) {
+            el.style.transform = 'translate3d(0,' + (y * speed) + 'px,0)';
+          } else {
+            var rect = el.parentElement.getBoundingClientRect();
+            var offset = (rect.top + rect.height / 2 - vh / 2);
+            el.style.transform = 'translate3d(0,' + (offset * speed) + 'px,0)';
+          }
+        });
+        if (heroContent) {
+          var fade = Math.max(0, 1 - y / (vh * 0.8));
+          heroContent.style.opacity = fade;
+          heroContent.style.transform = 'translate3d(0,' + (y * 0.15) + 'px,0)';
+        }
+        ticking = false;
+      }
+      window.addEventListener('scroll', function () {
+        if (!ticking) { requestAnimationFrame(update); ticking = true; }
+      }, { passive: true });
+      update();
+    })();
+
+    // ===== FADE-UP ENTRANCE (Intersection Observer) =====
+    // Purpose: Slides in .fade-up elements as they enter the viewport
+    // Triggers: IntersectionObserver; content is visible immediately when reduced motion is on
+    (function () {
+      var els = document.querySelectorAll('.fade-up');
+      if (prefersReduced || !('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('in-view'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function (el, i) { el.style.transitionDelay = (i % 5) * 120 + 'ms'; io.observe(el); });
+    })();
 
     // ===== MOBILE MENU TOGGLE =====
     // Purpose: Opens/closes the mobile nav and updates aria-expanded
