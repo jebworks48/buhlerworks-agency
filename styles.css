@@ -56,6 +56,18 @@
     /* ===== BASE STYLES ===== */
     /* Body font, line height, and focus ring for keyboard users */
     body { font-family: 'Inter', sans-serif; line-height: 1.7; }
+    /* Mobile layout fixes: prevent horizontal overflow and keep media fluid */
+    html, body { max-width: 100%; overflow-x: hidden; }
+    img, video, svg, iframe { max-width: 100%; height: auto; }
+    /* Touch targets: at least 44px tall for links/buttons in nav and CTAs */
+    a, button { -webkit-tap-highlight-color: rgba(45,212,191,.2); }
+    #menu-toggle { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+    .faq-trigger { min-height: 44px; }
+    @media (max-width: 767px) {
+      main section h2 { font-size: clamp(1.6rem, 1.2rem + 3vw, 2.25rem); }
+      .services-grid > article, .lift { width: 100%; }
+      .immersive-hero { min-height: 100svh; }
+    }
     h1, h2, h3, h4 { font-family: 'Sora', sans-serif; line-height: 1.2; }
     :focus-visible { outline: 3px solid #2DD4BF; outline-offset: 3px; border-radius: 6px; }
 
