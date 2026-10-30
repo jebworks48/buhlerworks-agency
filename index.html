@@ -803,24 +803,28 @@
           </ul>
         </div>
 
-        <div class="reveal booking-embed w-full">
-          <div class="booking-frame-wrap relative w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/40 bg-navy-800">
-            <iframe
-              src="https://paymegpt.com/book/76cdd315"
-              title="Book an appointment"
-              width="100%"
-              height="560"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="clipboard-write"
-              class="block w-full"
-              style="width:100%;height:560px;min-height:480px;border:0;"
-            ></iframe>
-          </div>
-          <p class="booking-fallback mt-4 text-sm text-slate-400 text-center">
-            Having trouble viewing the booking calendar?
-            <a href="https://paymegpt.com/book/76cdd315" target="_blank" rel="noopener" class="text-teal-300 hover:text-teal-200 underline underline-offset-4">Open the booking page in a new tab</a>.
+                <div class="reveal booking-cta w-full flex flex-col items-center text-center gap-5 p-6 sm:p-10 rounded-2xl border border-white/10 shadow-2xl shadow-black/40 bg-navy-800">
+          <!-- Supporting text: sets expectations before the visitor clicks -->
+          <p class="text-base sm:text-lg text-slate-200 max-w-md">
+            Pick a time for a free 30-minute call to explore your goals and your quickest AI win.
           </p>
+
+          <!-- Primary CTA: opens the external booking page in a new tab -->
+          <a href="https://paymegpt.com/book/76cdd315"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="booking-button inline-flex justify-center items-center gap-2 w-full sm:w-auto max-w-[22rem] bg-amber-400 hover:bg-amber-300 text-navy-950 font-bold text-base sm:text-lg rounded-xl px-[2rem] py-[0.875rem] sm:px-[2.25rem] sm:py-[1.125rem] shadow-lg shadow-black/30 transition-[background-color,box-shadow,transform] duration-200 ease-out hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/40 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-[3px] focus-visible:outline-white">
+            Book Now
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"></path></svg>
+          </a>
+
+          <!-- Secondary link: explains the new-tab behavior -->
+          <a href="https://paymegpt.com/book/76cdd315"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="text-sm text-teal-300 hover:text-teal-200 underline underline-offset-4 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-[3px] focus-visible:outline-teal-300 rounded">
+            Opens booking page in a new tab<span class="sr-only"> (buhlerworks consultation booking)</span>
+          </a>
         </div>
       </div>
     </section>
@@ -889,6 +893,7 @@
   <!-- ============================================================================ -->
 
   <script>
+
     // ===== REDUCED MOTION CHECK =====
     // Purpose: Detects the visitor's "reduce motion" OS setting
     // Triggers: On page load
