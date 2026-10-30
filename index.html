@@ -5,7 +5,7 @@
   <!-- Notes: Update the canonical URL, description, and og:image if they change.    -->
   <!-- ============================================================================ -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   
   <meta name="description" content="buhlerworks helps small and medium-sized businesses grow with AI: 24/7 Smart Bots, Apple &amp; Google Wallet loyalty programs, and conversion-ready landing pages. Book a free consultation.">
   
@@ -376,6 +376,7 @@
 
   <!-- ============================================================================ -->
   <!-- NAVBAR: Sticky top navigation with mobile menu                                -->
+  <!-- Mobile fix: page always opens at the top (see scroll-reset script below).     -->
   <!-- Notes: Links jump to sections on this page. Edit labels freely.               -->
   <!-- ============================================================================ -->
   <header data-section="navbar" class="site-header border-b border-white/5">
@@ -892,6 +893,22 @@
   <!-- ============================================================================ -->
 
   <script>
+
+    // ===== SCROLL-TO-TOP ON LOAD (mobile fix) =====
+    // Purpose: Stops the browser from restoring a previous scroll position and
+    // ignores hash jumps on first load so every visitor starts at the hero.
+    (function () {
+      if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+      function toTop() {
+        if (window.location.hash) {
+          history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
+        window.scrollTo(0, 0);
+      }
+      toTop();
+      window.addEventListener('load', toTop);
+      window.addEventListener('pageshow', function (e) { if (e.persisted) toTop(); });
+    })();
 
     // ===== REDUCED MOTION CHECK =====
     // Purpose: Detects the visitor's "reduce motion" OS setting
