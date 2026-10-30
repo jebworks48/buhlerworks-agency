@@ -1,4 +1,20 @@
-/* ===== BASE STYLES ===== */
+/* ===== BRAND TOKENS ===== */
+    /* Two-tone brand name: "buhler" in yellow, "works" in teal. Adjust here. */
+    :root {
+      --brand-yellow: #F5C518;
+      --brand-teal-name: #00897B;
+      --brand-teal: #0E8A86;
+      --brand-teal-dark: #0A6B68;
+      --brand-ink: #0B1426;
+      --brand-paper: #F7FBFB;
+      /* PLACEHOLDER values: replace with exact hex sampled from the logo artwork */
+      --brand-sun-yellow: #FFC61A;
+      --brand-logo-teal: #0E8A86;
+      --brand-header-bg: var(--brand-logo-teal);
+      --brand-page-bg: var(--brand-logo-teal);
+    }
+
+    /* ===== BASE STYLES ===== */
     /* Body font, line height, and focus ring for keyboard users */
     body { font-family: 'Inter', sans-serif; line-height: 1.7; }
     h1, h2, h3, h4 { font-family: 'Sora', sans-serif; line-height: 1.2; }
@@ -31,6 +47,54 @@
     .faq-panel > div { overflow: hidden; }
     .faq-icon { transition: transform .3s ease; }
     [aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+
+    /* ===== SITE HEADER (logo bar) ===== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(11, 20, 38, .0);
+      transition: background-color .3s ease, box-shadow .3s ease, backdrop-filter .3s ease;
+    }
+    .site-header.is-scrolled {
+      background: rgba(11, 20, 38, .72);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 8px 24px -12px rgba(0, 0, 0, .45);
+    }
+    .site-header {
+      background: transparent;
+      border-color: transparent;
+    }
+    .site-header.is-scrolled {
+      background: color-mix(in srgb, var(--brand-page-bg) 92%, transparent);
+    }
+    .site-logo {
+      height: clamp(56px, 8vw, 96px);
+      width: auto;
+      max-width: 100%;
+      aspect-ratio: 180 / 100;
+      display: block;
+      image-rendering: -webkit-optimize-contrast;
+      background: #FFFFFF;
+      padding: 0;
+      position: relative;
+      z-index: 1;
+    }
+    /* Brand yellow sampled from the logo; reused for the brand-name accent */
+    :root { --brand-logo-yellow: #FFC61A; }
+    /* Brand name: two spans, same font/weight/size, no gap between them */
+    .brand-name { text-transform: none; font-variant-caps: normal; }
+    .brand-buhler { color: var(--brand-yellow); text-transform: none; }
+    .brand-works { color: var(--brand-teal-name); text-transform: none; }
+    .brand-name-accent { color: var(--brand-yellow); text-transform: none; }
+    .wordmark-buhler { color: var(--brand-yellow); text-transform: none; }
+    .wordmark-works { color: var(--brand-teal-name); text-transform: none; }
+    body.brand-teal-page { background-color: var(--brand-page-bg); }
+
+    /* Brand accent used in headline */
+    .brand-accent { color: var(--brand-teal); }
+    .brand-accent-bg { background-color: var(--brand-teal); }
 
     /* ===== IMMERSIVE HERO (parallax) ===== */
     .immersive-hero {
