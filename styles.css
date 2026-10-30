@@ -1,9 +1,10 @@
 /* ===== BRAND TOKENS (single source of truth) ===== */
-    /* Plain hex values only: no color-mix(), oklch(), or nested var() chains,
-       so every browser (including older iOS Safari and Android WebViews) resolves them. */
+    /* Hard-coded colors ensure the logotype renders identically on macOS, iOS, and preview tools */
+    /* Plain hex only: no color-mix(), oklch(), or nested var() chains,
+       so every mobile browser resolves them, including older iOS Safari and Android WebViews. */
     :root {
-      --brand-yellow: #FFC20E;        /* "buhler" on dark backgrounds, contrast ~11:1 on navy */
-      --brand-teal: #2DD4BF;          /* "works" and accents on dark backgrounds, contrast ~10:1 on navy */
+      --brand-yellow: #FFC20E;        /* "buhler" — contrast ~11:1 on navy */
+      --brand-teal: #2DD4BF;          /* "works" + accents — contrast ~10:1 on navy */
       --brand-teal-name: #2DD4BF;
       --brand-teal-dark: #0A6B68;
       --brand-ink: #0B1426;
@@ -13,37 +14,43 @@
       --brand-surface: #111D35;       /* cards */
       --brand-text: #E2E8F0;          /* body text on dark */
       --brand-text-strong: #FFFFFF;   /* headings */
-      --brand-logo-teal: #0E8A86;     /* legacy teal, kept for decorative use only */
-      --brand-page-bg: #070D1A;       /* base page background (solid fallback) */
-      --brand-header-bg: #0B1426;     /* header background (solid fallback) */
+      --brand-logo-teal: #0E8A86;     /* decorative only */
+      --brand-page-bg: #070D1A;       /* base page background */
+      --brand-header-bg: #0B1426;     /* header background */
     }
 
     /* Safety net: the page is always dark, so html/body never fall back to white */
-    html { background-color: #070D1A; color: #E2E8F0; }
-    body { background-color: #070D1A; color: #E2E8F0; min-height: 100%; }
+    html { background-color: var(--brand-page-bg); color: var(--brand-text); }
+    body { background-color: var(--brand-page-bg); color: var(--brand-text); min-height: 100%; }
 
-    /* Explicit background + text for every top-level section and the footer,
-       so nothing silently inherits white on mobile */
-    main > section, footer { background-color: #070D1A; color: #E2E8F0; }
+    /* Every top-level section, the header, and the footer declare their own
+       background and text color, so nothing silently inherits white on mobile */
+    .site-header { background-color: var(--brand-header-bg); color: var(--brand-text); }
+    main > section, footer { background-color: var(--brand-page-bg); color: var(--brand-text); }
     main > section.bg-navy-800,
-    main > section.bg-navy-900 { background-color: #0B1426; }
-    main > section.bg-navy-950 { background-color: #070D1A; }
+    main > section.bg-navy-900 { background-color: var(--brand-navy); }
+    main > section.bg-navy-950 { background-color: var(--brand-page-bg); }
     main section h1, main section h2, main section h3, main section h4,
-    footer h2 { color: #FFFFFF; }
-    .hero-glow { background-color: #070D1A; }
-    .lift, .reveal > article, article, li > article { background-color: #111D35; color: #E2E8F0; }
+    footer h2 { color: var(--brand-text-strong); }
+    .immersive-hero { background-color: var(--brand-page-bg); color: var(--brand-text); }
+    .hero-glow { background-color: var(--brand-page-bg); }
+    .lift, .reveal > article, article, li > article,
+    .bg-navy-800 { background-color: var(--brand-surface); color: var(--brand-text); }
+    .bg-navy-950 { background-color: var(--brand-page-bg); }
+    .bg-navy-900 { background-color: var(--brand-navy); }
     /* Buttons always carry their own colors */
-    .booking-button { background-color: #FFC20E; color: #070D1A; }
+    .booking-button { background-color: var(--brand-yellow); color: var(--brand-page-bg); }
     .booking-button:hover { background-color: #FFD54F; }
     a.bg-teal-400 { background-color: #2DD4BF; color: #070D1A; }
-    /* Prevent iOS auto-dark / text-size quirks from altering the palette */
+    .bg-teal-400 { background-color: #2DD4BF; }
+    .text-teal-300, .text-teal-400 { color: #2DD4BF; }
+    .text-amber-400 { color: #FFC20E; }
+    .bg-amber-400 { background-color: #FFC20E; }
+    /* Prevent iOS auto-text-size quirks from altering the layout */
     html, body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
-    /* Forbid forced-colors / dark-mode overrides from removing the palette */
+    /* Dark-only page: ignore light color-scheme preferences so the palette cannot flip */
     @media (prefers-color-scheme: light) {
-      html, body { background-color: #070D1A; color: #E2E8F0; }
-    }
-    @supports not (color: color-mix(in srgb, red, blue)) {
-      .site-header.is-scrolled { background: #0B1426; }
+      html, body { background-color: var(--brand-page-bg); color: var(--brand-text); }
     }
 
     /* ===== BASE STYLES ===== */
@@ -81,78 +88,59 @@
     [aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
 
     /* ===== SITE HEADER (logo bar) ===== */
+    /* Sticky header: solid navy background always present, so it never shows white on mobile */
     .site-header {
       position: sticky;
       top: 0;
       z-index: 50;
-      background: rgba(11, 20, 38, .0);
-      transition: background-color .3s ease, box-shadow .3s ease, backdrop-filter .3s ease;
+      background-color: #0B1426;
+      color: #E2E8F0;
+      border-bottom: 1px solid rgba(255,255,255,.05);
+      transition: box-shadow .3s ease;
     }
     .site-header.is-scrolled {
-      background: rgba(11, 20, 38, .72);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      background-color: var(--brand-header-bg);
       box-shadow: 0 8px 24px -12px rgba(0, 0, 0, .45);
     }
-    .site-header {
-      background: transparent;
-      border-color: transparent;
-    }
-    .site-header.is-scrolled {
-      background: #0B1426;
-      background: rgba(11, 20, 38, .94);
-    }
-    .site-logo {
-      height: clamp(56px, 8vw, 96px);
-      width: auto;
-      max-width: 100%;
-      aspect-ratio: 180 / 100;
-      display: block;
-      image-rendering: -webkit-optimize-contrast;
-      background: #FFFFFF;
-      padding: 0;
-      position: relative;
-      z-index: 1;
-    }
-    /* Brand yellow sampled from the logo; reused for the brand-name accent */
-    :root { --brand-logo-yellow: #FFC61A; }
-    /* Brand name: two spans, same font/weight/size, no gap between them */
-    .brand-name { text-transform: none; font-variant-caps: normal; }
-    .brand-buhler { color: var(--brand-yellow); text-transform: none; }
-    .brand-works { color: var(--brand-teal-name); text-transform: none; }
-    .brand-name-accent { color: var(--brand-yellow); text-transform: none; }
-    .wordmark-buhler { color: var(--brand-yellow); text-transform: none; }
-    .wordmark-works { color: var(--brand-teal-name); text-transform: none; }
+
+    /* Brand name color roles (plain tokens, no gradients or clipping) */
+    .brand-accent { color: #2DD4BF; }
     body.brand-teal-page { background-color: var(--brand-page-bg); }
 
-    /* Brand accent used in headline */
-    .brand-accent { color: var(--brand-teal); }
-    .brand-accent-bg { background-color: var(--brand-teal); }
-
     /* ===== WORDMARK (text logotype) ===== */
-    /* Single element, two adjacent spans, same font/weight/size.
-       Scales with clamp() so it never wraps awkwardly on 320px phones. */
+    /* One accessible element containing two adjacent spans with the same
+       font, weight, and size. A solid navy pill keeps both colors high-contrast:
+       yellow on navy ~11:1, teal on navy ~10:1 (both well above WCAG AA 4.5:1).
+       Sizing uses clamp() so the word never wraps on 320px phones. */
     .logotype {
       display: inline-flex;
       align-items: baseline;
       font-family: 'Sora', sans-serif;
       font-weight: 800;
-      font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem);
+      font-size: clamp(1.15rem, 0.95rem + 0.9vw, 1.6rem);
       line-height: 1;
       letter-spacing: -0.01em;
       white-space: nowrap;
       text-decoration: none;
       background-color: #0B1426;
+      color: #FFFFFF;
       padding: 0.5rem 0.75rem;
       border-radius: 0.75rem;
-      border: 1px solid rgba(255,255,255,.08);
-      text-shadow: 0 1px 2px rgba(0,0,0,.45);
+      border: 1px solid rgba(255,255,255,.12);
+      text-shadow: none;
+      max-width: 100%;
+      -webkit-text-fill-color: currentColor;
     }
-    .logotype .wm-buhler { color: #FFC20E; }
-    .logotype .wm-works { color: #2DD4BF; }
-    .logotype:focus-visible { outline: 3px solid #FFC20E; outline-offset: 4px; }
+    .logotype .wm-buhler { color: #FFC20E; -webkit-text-fill-color: #FFC20E; }
+    .logotype .wm-works { color: #2DD4BF; -webkit-text-fill-color: #2DD4BF; }
+    .brand-buhler { color: #FFC20E !important; -webkit-text-fill-color: #FFC20E; }
+    .brand-works { color: #2DD4BF !important; -webkit-text-fill-color: #2DD4BF; }
+    .logotype:focus-visible { outline: 3px solid var(--brand-yellow); outline-offset: 4px; }
     @media (max-width: 359px) {
-      .logotype { font-size: 1.1rem; padding: 0.4rem 0.6rem; }
+      .logotype { font-size: 1.05rem; padding: 0.4rem 0.6rem; }
+    }
+    @media (min-width: 360px) and (max-width: 420px) {
+      .logotype { font-size: 1.15rem; }
     }
 
     /* ===== IMMERSIVE HERO (parallax) ===== */
