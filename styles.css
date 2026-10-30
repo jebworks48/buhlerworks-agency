@@ -185,4 +185,5 @@
       .parallax-layer,
       .float-orb { transform: none !important; inset: 0; height: 100%; }
       .immersive-hero .hero-content { transform: none !important; opacity: 1 !important; }
+    .booking-button { transition: none !important; }
     }
