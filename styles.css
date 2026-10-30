@@ -1,17 +1,49 @@
-/* ===== BRAND TOKENS ===== */
-    /* Two-tone brand name: "buhler" in yellow, "works" in teal. Adjust here. */
+/* ===== BRAND TOKENS (single source of truth) ===== */
+    /* Plain hex values only: no color-mix(), oklch(), or nested var() chains,
+       so every browser (including older iOS Safari and Android WebViews) resolves them. */
     :root {
-      --brand-yellow: #F5C518;
-      --brand-teal-name: #00897B;
-      --brand-teal: #0E8A86;
+      --brand-yellow: #FFC20E;        /* "buhler" on dark backgrounds, contrast ~11:1 on navy */
+      --brand-teal: #2DD4BF;          /* "works" and accents on dark backgrounds, contrast ~10:1 on navy */
+      --brand-teal-name: #2DD4BF;
       --brand-teal-dark: #0A6B68;
       --brand-ink: #0B1426;
       --brand-paper: #F7FBFB;
-      /* PLACEHOLDER values: replace with exact hex sampled from the logo artwork */
-      --brand-sun-yellow: #FFC61A;
-      --brand-logo-teal: #0E8A86;
-      --brand-header-bg: var(--brand-logo-teal);
-      --brand-page-bg: var(--brand-logo-teal);
+      --brand-navy: #0B1426;          /* header + solid surfaces */
+      --brand-navy-deep: #070D1A;     /* footer + base page background */
+      --brand-surface: #111D35;       /* cards */
+      --brand-text: #E2E8F0;          /* body text on dark */
+      --brand-text-strong: #FFFFFF;   /* headings */
+      --brand-logo-teal: #0E8A86;     /* legacy teal, kept for decorative use only */
+      --brand-page-bg: #070D1A;       /* base page background (solid fallback) */
+      --brand-header-bg: #0B1426;     /* header background (solid fallback) */
+    }
+
+    /* Safety net: the page is always dark, so html/body never fall back to white */
+    html { background-color: #070D1A; color: #E2E8F0; }
+    body { background-color: #070D1A; color: #E2E8F0; min-height: 100%; }
+
+    /* Explicit background + text for every top-level section and the footer,
+       so nothing silently inherits white on mobile */
+    main > section, footer { background-color: #070D1A; color: #E2E8F0; }
+    main > section.bg-navy-800,
+    main > section.bg-navy-900 { background-color: #0B1426; }
+    main > section.bg-navy-950 { background-color: #070D1A; }
+    main section h1, main section h2, main section h3, main section h4,
+    footer h2 { color: #FFFFFF; }
+    .hero-glow { background-color: #070D1A; }
+    .lift, .reveal > article, article, li > article { background-color: #111D35; color: #E2E8F0; }
+    /* Buttons always carry their own colors */
+    .booking-button { background-color: #FFC20E; color: #070D1A; }
+    .booking-button:hover { background-color: #FFD54F; }
+    a.bg-teal-400 { background-color: #2DD4BF; color: #070D1A; }
+    /* Prevent iOS auto-dark / text-size quirks from altering the palette */
+    html, body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+    /* Forbid forced-colors / dark-mode overrides from removing the palette */
+    @media (prefers-color-scheme: light) {
+      html, body { background-color: #070D1A; color: #E2E8F0; }
+    }
+    @supports not (color: color-mix(in srgb, red, blue)) {
+      .site-header.is-scrolled { background: #0B1426; }
     }
 
     /* ===== BASE STYLES ===== */
@@ -67,7 +99,8 @@
       border-color: transparent;
     }
     .site-header.is-scrolled {
-      background: color-mix(in srgb, var(--brand-page-bg) 92%, transparent);
+      background: #0B1426;
+      background: rgba(11, 20, 38, .94);
     }
     .site-logo {
       height: clamp(56px, 8vw, 96px);
@@ -95,6 +128,32 @@
     /* Brand accent used in headline */
     .brand-accent { color: var(--brand-teal); }
     .brand-accent-bg { background-color: var(--brand-teal); }
+
+    /* ===== WORDMARK (text logotype) ===== */
+    /* Single element, two adjacent spans, same font/weight/size.
+       Scales with clamp() so it never wraps awkwardly on 320px phones. */
+    .logotype {
+      display: inline-flex;
+      align-items: baseline;
+      font-family: 'Sora', sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem);
+      line-height: 1;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+      text-decoration: none;
+      background-color: #0B1426;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.75rem;
+      border: 1px solid rgba(255,255,255,.08);
+      text-shadow: 0 1px 2px rgba(0,0,0,.45);
+    }
+    .logotype .wm-buhler { color: #FFC20E; }
+    .logotype .wm-works { color: #2DD4BF; }
+    .logotype:focus-visible { outline: 3px solid #FFC20E; outline-offset: 4px; }
+    @media (max-width: 359px) {
+      .logotype { font-size: 1.1rem; padding: 0.4rem 0.6rem; }
+    }
 
     /* ===== IMMERSIVE HERO (parallax) ===== */
     .immersive-hero {
